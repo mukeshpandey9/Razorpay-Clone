@@ -162,6 +162,29 @@ h6 {
     display: none;
   }
 }
+.payments-image {
+  height: 500px;
+  width: 500px;
+  position: relative;
+  overflow-y: hidden;
+  max-width: auto;
+}
+
+.companiesList {
+  height: auto;
+  position: absolute;
+  animation: 10s infinite linear moveCompany;
+  object-fit: cover;
+}
+
+@keyframes moveCompany {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -50%;
+  }
+}
 
 #logo {
   width: 150px;
@@ -294,6 +317,9 @@ h6 {
   background: rgb(204, 250, 232, 0.5);
 }
 
+.social {
+  display: flex;
+}
 .footer-item {
   margin-top: 30px;
   font-size: 1.2rem !important;

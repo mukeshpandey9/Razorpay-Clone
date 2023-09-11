@@ -41,6 +41,15 @@ h6 {
   line-height: 2;
 }
 
+.line {
+  height: 0.5vh;
+  width: 2vw;
+  background-color: lightgreen;
+}
+
+.btn-primary {
+  width: 13vw;
+}
 /***********  Media Breakpoints  ***********/
 
 @media screen and (min-width: 1010px) {
@@ -75,10 +84,6 @@ h6 {
     height: 105vh !important;
   }
 
-  /* #business-section{
-            padding-top: 330px !important;
-            
-        } */
   #community button {
     margin-top: 40% !important;
   }
@@ -176,7 +181,6 @@ h6 {
   position: absolute;
   animation: 10s infinite linear moveCompany;
   object-fit: cover;
-  
 }
 
 @keyframes moveCompany {
@@ -209,9 +213,36 @@ h6 {
   background: linear-gradient(45deg, #02042b, #02042b 50%);
 }
 
+.text-start {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
 .home-item1 {
   padding: 150px 0px;
   font-weight: 600;
+}
+
+.hero-shape {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  width: 100%;
+}
+
+.hero-shape img {
+  width: 100%;
+  object-fit: fill;
+
+  transform: scaleX(1);
+}
+
+/* Pricing section */
+
+#payments {
+  margin-top: 15vh;
 }
 
 /* Payments Section  */
@@ -263,7 +294,8 @@ h6 {
 #business-section {
   padding: 50px 0px 40px 0px;
   position: relative;
-  background: #02042a;
+  background-image: url(./images/feature-section-2BG.svg);
+  background-size: cover;
 }
 
 #business-section .card {
